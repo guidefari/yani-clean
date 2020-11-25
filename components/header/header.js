@@ -1,6 +1,5 @@
 // import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
-import { Transition } from '@tailwindui/react'
 import { Box} from 'react-feather'
 import {navLinks} from './navLinks'
 import Link from "next/link";
@@ -44,7 +43,7 @@ function Header() {
                     From: "opacity-100 scale-100"
                     To: "opacity-0 scale-95" */}
 
-                <Transition
+                {/* <Transition
                 show={isOpen}
                 enter="duration-150 ease-out"
                 enterFrom="opacity-0 scale-95"
@@ -76,7 +75,7 @@ function Header() {
                         </div>
                         </div>
                     </header>
-                </Transition>
+                </Transition> */}
     </>
   );
 }

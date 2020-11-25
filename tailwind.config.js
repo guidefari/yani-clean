@@ -1,12 +1,5 @@
 // See https://tailwindcss.com/docs/configuration for details
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  experimental: {
-    applyComplexClasses: true,
-  },
   purge: ["./src/**/*.js"],
   theme: {
     container: {
@@ -40,9 +33,7 @@ module.exports = {
     },
   },
   variants: {},
-  // https://github.com/tailwindcss/custom-forms
   plugins: [
-    require('@tailwindcss/ui'),
-    require("@tailwindcss/custom-forms")
+    require('@tailwindcss/forms')
   ],
 };
