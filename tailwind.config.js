@@ -28,6 +28,12 @@ module.exports = {
           secondary: '#F2F2F2',
         }
       },
+      fontFamily: {
+        heading: 'Cairo-Bold',
+        headingSecondary: 'Cairo-Semi-Bold',
+        rubik: 'Rubik',
+        rubikItalic: 'Rubik-Italic'
+      },
       maxHeight: {
         xs: "20rem",
         sm: "24rem",

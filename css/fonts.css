@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik-Italic';
+    src: url('/assets/fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('/assets/fonts/Cairo-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Cairo-Semi-Bold';
+    src: url('/assets/fonts/Cairo-SemiBold.ttf');
+    font-weight: medium;
+}
