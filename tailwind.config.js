@@ -6,6 +6,28 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        blue: { 
+          primary: '#24408A',
+          shadowOne: '#CBD2E6',
+          shadowTwo: '#D7DFF4',
+          secondary: '#3E6A95',
+          tertiary: '#BAE8E5',
+        },
+        yellow: {
+          primary: '#FAC32B',
+          secondary: '#FBD365',
+          shadowOne: '#FEF1CD',
+        },
+        black: {
+          heading: '#2F2E2E',
+          BoBody: '#3C3B3B',
+        },
+        white: {
+          primary: '#F2F2F2',
+          secondary: '#F2F2F2',
+        }
+      },
       maxHeight: {
         xs: "20rem",
         sm: "24rem",
