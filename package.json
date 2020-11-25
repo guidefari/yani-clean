@@ -1,0 +1,33 @@
+{
+  "name": "next-starter-tailwind",
+  "version": "1.0.0",
+  "description": "Kickstart your next project. haha",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorbryant/next-tailwind-kickstart.git"
+  },
+  "author": "Guide Fari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorbryant/next-tailwind-kickstart/issues"
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-feather": "^2.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "0.2.1",
+    "@tailwindcss/ui": "^0.6.2",
+    "@tailwindui/react": "^0.1.1",
+    "tailwindcss": "1.8.10"
+  }
+}
