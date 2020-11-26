@@ -1,8 +1,10 @@
+import Hero from "../components/Home-page/Hero";
 import Layout from "../components/layout";
 
 function IndexPage() {
   return (
     <Layout>
+      <Hero/>
       <div className="flex flex-col items-center justify-center">
         <img
           src="team-of-critters.svg"
