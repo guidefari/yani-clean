@@ -24,8 +24,9 @@ module.exports = {
           BoBody: '#3C3B3B',
         },
         white: {
+          true: '#FFFFFF',
           primary: '#F2F2F2',
-          secondary: '#F2F2F2',
+          secondary: '#F7F7F7',
         }
       },
       fontFamily: {
