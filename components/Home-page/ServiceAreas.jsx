@@ -1,3 +1,4 @@
+import { MapPin } from "react-feather"
 
 
 const ServiceAreas = () => {
@@ -26,22 +27,28 @@ const ServiceAreas = () => {
 
 
     return (
-        <section className='bg-gradient-to-r from-white-true to-white-primary xl:mx-12 mx-14 pb-14'>
-            <h3 className="text-xl md:text-3xl lg:text-5xl font-heading text-black-heading">Regions We Service</h3>
-            <div className='flex space-x-12 overflow-x-scroll'>
-                {
-                    regions.map(({Area, picture}) => (
-                    <div className="container relative mx-auto my-2 overflow-hidden bg-white rounded-lg shadow-lg" key={Area} style={{minWidth: '20rem',}}>
-                        <span className="absolute z-20 flex items-center justify-center w-10 h-10 text-yellow-600 bg-yellow-200 rounded-full top-6 left-6">i</span>
-                        <div className="border-t-8 border-yellow-300" style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))'}}>
-                            <img className="w-full" src={picture} alt="Profile image" />
-                        </div>
-                        <div className="pt-6 pb-12 text-center text-gray-600">
-                            <h3 className="text-2xl font-headingSecondary text-black-heading">{Area}</h3>
-                        </div>
-                    </div>
-                ))}
+        <section className='bg-gradient-to-r from-white-true to-white-primary pb-14'>
+            <div className='py-7 xl:mx-12 mx-14'>
+                <h3 className="text-xl md:text-3xl lg:text-5xl font-heading text-black-heading">Regions We Service</h3>
             </div>
+            <section className='flex flex-no-wrap overflow-x-auto scrolling-touch'>
+                <div className='flex pl-6 pr-10 mb-4 space-x-16'>
+                    {
+                        regions.map(({Area, picture}) => (
+                        <div className="relative w-full my-2 overflow-hidden bg-white rounded-lg shadow-lg " key={Area} style={{minWidth: '16rem',}}>
+                            <span className="absolute z-20 flex items-center justify-center w-10 h-10 text-yellow-600 bg-yellow-200 rounded-full top-6 left-6">
+                                <MapPin/>
+                            </span>
+                            <div className="border-t-8 border-yellow-300" style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))'}}>
+                                <img className="w-full" src={picture} alt="Profile image" />
+                            </div>
+                            <div className="pt-6 pb-12 text-center text-gray-600">
+                                <h3 className="text-2xl font-headingSecondary text-black-heading">{Area}</h3>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </section>
     )
 }
