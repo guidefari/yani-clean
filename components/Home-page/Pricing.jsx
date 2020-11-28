@@ -1,3 +1,4 @@
+import { ArrowRight } from "react-feather";
 
 const Pricing = () => {
     return (
@@ -18,40 +19,26 @@ const Pricing = () => {
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-mr-4">
                                 <div className="overflow-hidden text-black rounded-lg shadow-lg bg-blue-secondary ">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
-                                        <h1 className="p-3 pb-10 text-lg font-medium tracking-wide text-center uppercase">
+                                        <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             Carpet Cleaning 
                                         </h1>
-                                        Stripe offers everything needed to run an online business
-                                        at scale. Get in touch for details.
+                                        <p className='text-blue-shadowTwo font-rubikItalic'>
+                                            Price depends on size of the room
+                                        </p>
                                     </div>
                                     <div className="flex flex-wrap px-6 mt-3">
                                     <ul>
                                         <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">No setup</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo">Approx. <span className='font-bold text-yellow-primary'>£30-35</span> for a living room.</span>
                                         </li>
                                         <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">No setups</span>
-                                        </li>
-                                        <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
-                                        </div>
-                                        <span className="ml-3 text-lg text-gray-700">Speed</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£20</span> for a small bedroom. Dry cleaning will cost about double this.</span>
                                         </li>
                                     </ul> 
                                     </div>  
@@ -63,45 +50,43 @@ const Pricing = () => {
                                 </div>
                             </div>
                             <div className="relative z-10 w-full max-w-md my-8 rounded-lg shadow-lg bg-blue-secondary sm:w-2/3 lg:w-1/3 sm:my-5">
-                                <div className="py-4 text-sm font-semibold leading-none tracking-wide text-center text-black uppercase bg-gray-200 rounded-t-lg">
+                                <div className="py-4 text-sm font-semibold leading-none tracking-wide text-center uppercase rounded-t-lg text-black-heading bg-blue-shadowTwo">
                                     Most Popular
                                 </div>
                                 <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
-                                    <h1 className="p-3 pb-0 text-lg font-medium tracking-wide text-center uppercase">
+                                    <h1 className="p-3 pb-0 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                         General Cleaning
                                     </h1>
                                     <h2 className="pb-6 text-sm text-center text-yellow-primary font-heading"><span className="text-3xl">£15</span> /hr</h2> 
-                                    Stripe offers everything needed to run an online business at
-                                    scale. Get in touch for details.
+                                    <p className='text-blue-shadowTwo font-rubikItalic'>
+                                        2 hours minimum
+                                    </p>
                                 </div>
                                 <div className="flex justify-start pl-12 mt-3 sm:justify-start">
                                     <ul>
                                     <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current">
-                                        <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                        </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">No setup</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo">Vacuuming the entire house</span>
                                     </li>
                                     <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                        <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                        </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">Hidden fees</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo">Cleaning the bathrooms, including toilets</span>
                                     </li>
                                     <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                        <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                        </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">Original</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo">Cleaning the kitchen, including quickly mopping the floor</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
+                                        </div>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo">A few assorted small tasks like wiping surfaces down, dusting the furniture and TV.</span>
                                     </li>
                                     </ul>
                                 </div>
@@ -114,40 +99,26 @@ const Pricing = () => {
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-ml-4">
                                 <div className="overflow-hidden text-black rounded-lg shadow-lg bg-blue-secondary ">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
-                                        <h1 className="p-3 pb-10 text-lg font-medium tracking-wide text-center uppercase">
+                                        <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             End of Tenancy
                                         </h1>
-                                        Stripe offers everything needed to run an online business
-                                        at scale. Get in touch for details.
+                                        <p className='text-blue-shadowTwo font-rubikItalic'>
+                                            Let the professionals handle it.
+                                        </p>
                                     </div>
                                     <div className="flex flex-wrap px-6 mt-3">
                                     <ul>
                                         <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">Electric</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£80</span>  for end of tenancy cleaning for a studio flat </span>
                                         </li>
                                         <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
+                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
+                                            <ArrowRight/>
                                         </div>
-                                        <span className="ml-3 text-lg text-gray-700">Monthly</span>
-                                        </li>
-                                        <li className="flex items-center">
-                                        <div className="p-2 text-green-700 rounded-full fill-current ">
-                                            <svg className="w-6 h-6 align-middle" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                            <polyline points="22 4 12 14.01 9 11.01" />
-                                            </svg>
-                                        </div>
-                                        <span className="ml-3 text-lg text-gray-700">No setup</span>
+                                        <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£160</span> for end of tenancy cleaning for a 3-bedroom house</span>
                                         </li>
                                     </ul>
                                     </div>
