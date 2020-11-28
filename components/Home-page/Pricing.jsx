@@ -13,10 +13,10 @@ const Pricing = () => {
                         accusantium doloremque laudantium, totam rem aperiam.
                         </p>
                     </div>
-                    <div className="w-24 h-1 mx-auto mt-4 rounded opacity-75 bg-yellow-secondary" />
+                    <div className="w-24 h-1 mx-auto my-4 rounded opacity-75 md:my-8 xl:my-10 bg-yellow-secondary" />
                     <div className="max-w-full mx-auto my-3 md:max-w-6xl md:px-8">
-                        <div className="relative flex flex-col items-center block md:flex-row">
-                            <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-mr-4">
+                        <div className="relative flex flex-col items-center block lg:flex-row lg:space-x-2">
+                            <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 ">
                                 <div className="overflow-hidden text-black rounded-lg shadow-lg bg-blue-secondary ">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
                                         <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
@@ -28,22 +28,22 @@ const Pricing = () => {
                                     </div>
                                     <div className="flex flex-wrap px-6 mt-3">
                                     <ul>
-                                        <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                        <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo">Approx. <span className='font-bold text-yellow-primary'>£30-35</span> for a living room.</span>
                                         </li>
-                                        <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                        <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£20</span> for a small bedroom. Dry cleaning will cost about double this.</span>
                                         </li>
                                     </ul> 
                                     </div>  
                                     <div className="flex items-center block p-8 uppercase">
-                                    <button className="block w-full px-6 py-3 mt-3 text-lg font-semibold text-white bg-black rounded-lg shadow-xl hover:bg-gray-700">
+                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
                                         Select
                                     </button>
                                     </div>
@@ -62,36 +62,36 @@ const Pricing = () => {
                                         2 hours minimum
                                     </p>
                                 </div>
-                                <div className="flex justify-start pl-12 mt-3 sm:justify-start">
+                                <div className="flex flex-wrap px-6 mt-3">
                                     <ul>
-                                    <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary">
-                                            <ArrowRight/>
+                                    <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo">Vacuuming the entire house</span>
                                     </li>
-                                    <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                    <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo">Cleaning the bathrooms, including toilets</span>
                                     </li>
-                                    <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                    <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo">Cleaning the kitchen, including quickly mopping the floor</span>
                                     </li>
-                                    <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                    <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo">A few assorted small tasks like wiping surfaces down, dusting the furniture and TV.</span>
                                     </li>
                                     </ul>
                                 </div>
                                 <div className="flex items-center block p-8 uppercase">
-                                    <button className="block w-full px-6 py-3 mt-3 text-lg font-semibold text-white bg-black rounded-lg shadow-xl hover:bg-gray-700">
+                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
                                     Select
                                     </button>
                                 </div>
@@ -108,22 +108,22 @@ const Pricing = () => {
                                     </div>
                                     <div className="flex flex-wrap px-6 mt-3">
                                     <ul>
-                                        <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                        <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£80</span>  for end of tenancy cleaning for a studio flat </span>
                                         </li>
-                                        <li className="flex items-center">
-                                        <div className="p-2 rounded-full fill-current text-yellow-secondary ">
-                                            <ArrowRight/>
+                                        <li className="flex items-center mb-2">
+                                        <div className="rounded-full fill-current lg:p-2 text-yellow-secondary ">
+                                            <ArrowRight className='inline-block w-4 h-4 lg:w-6 lg:h-6'/>
                                         </div>
                                         <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£160</span> for end of tenancy cleaning for a 3-bedroom house</span>
                                         </li>
                                     </ul>
                                     </div>
                                     <div className="flex items-center block p-8 uppercase">
-                                    <button className="block w-full px-6 py-3 mt-3 text-lg font-semibold text-white bg-black rounded-lg shadow-xl hover:bg-gray-700">
+                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
                                         Select
                                     </button>
                                     </div>
