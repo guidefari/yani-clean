@@ -2,7 +2,7 @@ import { Info } from "react-feather"
 
 const HowItWorks = () => {
     return (
-        <div className='transform -translate-y-10 bg-gradient-to-b from-white-true to-white-primary xl:mx-12 mx-14'>
+        <div className='transform -translate-y-10 bg-gradient-to-b from-white-true to-white-primary xl:mx-12 mx-14 pb-14'>
             <div className='flex items-center justify-center py-12 space-x-3 sm:py-16 '>
                 <div className='flex items-center justify-center w-8 h-8 rounded-full bg-blue-shadowTwo'>
                     <Info className='inline text-blue-primary'/>
