@@ -1,6 +1,8 @@
 @import url('fonts.css');
+/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+/* purgecss end ignore */
 
 /* this is because the image doesnt take up 100% height of the div, so we gotta cheat code somehow bru */
 .manual-height{
