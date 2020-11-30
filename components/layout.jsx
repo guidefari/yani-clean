@@ -1,5 +1,5 @@
-import Header from "./header/header";
-import Footer from "./footer";
+import Header from "./header/header.jsx";
+import Footer from "./footer.jsx";
 
 function Layout(props) {
   return (
