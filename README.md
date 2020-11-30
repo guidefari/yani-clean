@@ -1,5 +1,5 @@
 # Document your project :)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d02312b0-5bb6-4287-bc76-522eaa77edb1/deploy-status)](https://app.netlify.com/sites/yani-clean/deploys)
+
 - [Yani Clean Website](https://)
 ##
 ~~Check out next Google font loader~~
