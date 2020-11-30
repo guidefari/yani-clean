@@ -1,7 +1,7 @@
+@import url('fonts.css');
 @tailwind base;
 @tailwind components;
 
-@import url('fonts.css');
 /* this is because the image doesnt take up 100% height of the div, so we gotta cheat code somehow bru */
 .manual-height{
     height: 98.5%;
