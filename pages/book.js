@@ -8,16 +8,14 @@ const book = () => {
     const [addOnServices, setAddOnServices] = useState([])
 
     const handleAddOnServices = (serviceYacho) => {
-        // console.log(serviceYacho)
-        
         if(!addOnServices.includes(serviceYacho)) {
+            // if not in Array, add it
             setAddOnServices([...addOnServices, serviceYacho])
-            // console.log(addOnServices)
         }else{
+            // if in Array,remove that sucker
             const indexOfItemInArray = addOnServices.findIndex(item => item === serviceYacho)
             addOnServices.splice(indexOfItemInArray, 1)
             setAddOnServices([...addOnServices])
-            console.log(indexOfItemInArray)
         }
     }
     console.log(propertySize)
@@ -27,14 +25,14 @@ const book = () => {
         <div className='container flex items-center justify-center min-h-xs'>
             <form action="" className='flex flex-col space-y-10'>
                 <section id="typeOfServiceWrapper" className='flex flex-col'>
-                    <h1 className='text-2xl'>1. Type of Service</h1>
+                    <h1 className='text-2xl'>Type of Service</h1>
                     <div className='flex space-x-10'>
                         <button type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular</button>
                         <button type="button" value='endOfTenancy' onClick={() => setTypeOfService('endOfTenancy')}>End of Tenancy</button>
                     </div>
                 </section>
                 <section id="propertySizeWrapper" className='flex flex-col'>
-                    <h1 className='text-2xl'>2. Property Size</h1>
+                    <h1 className='text-2xl'>Property Size</h1>
                     <div className='flex space-x-10'>
                         <button type="button" onClick={() => setPropertyType('studio')}>Studio</button>
                         <button type="button" onClick={() => setPropertyType('notStudio')}>2+ Bedroom</button>
@@ -49,7 +47,7 @@ const book = () => {
                     </div>
                 </section>
                 {(typeOfService === 'regular' ) && (<section id="serviceFrequencyWrapper" className='flex flex-col'>
-                    <h1 className='text-2xl'>3. Service Frequency</h1>
+                    <h1 className='text-2xl'>Service Frequency</h1>
                     <div className="mt-2">
                         <div>
                             <button type="button" onClick={() => setServiceFrequency('weekly')}>Weekly</button>
@@ -63,7 +61,7 @@ const book = () => {
                     </div>
                 </section>)}
                 <section id="addOnServicesWrapper" className='flex flex-col'>
-                    <h1 className='text-2xl'>4. Add on Services</h1>
+                    <h1 className='text-2xl'>Add on Services</h1>
                     <div className="mt-2">
                         <div>
                             <button type="button" onClick={() => handleAddOnServices('washer')}>Washer</button>
@@ -73,6 +71,9 @@ const book = () => {
                         </div>
                         <div>
                             <button type="button" onClick={() => handleAddOnServices('nhingi')}>Nhingi</button>
+                        </div>
+                        <div>
+                            <button type="button" onClick={() => handleAddOnServices('item')}>item here</button>
                         </div>
                     </div>
                 </section>
