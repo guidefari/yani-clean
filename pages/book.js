@@ -12,10 +12,12 @@ const book = () => {
         
         if(!addOnServices.includes(serviceYacho)) {
             setAddOnServices([...addOnServices, serviceYacho])
-            console.log(addOnServices)
+            // console.log(addOnServices)
         }else{
-            //remove the item
-            console.log(addOnServices)
+            const indexOfItemInArray = addOnServices.findIndex(item => item === serviceYacho)
+            addOnServices.splice(indexOfItemInArray, 1)
+            setAddOnServices([...addOnServices])
+            console.log(indexOfItemInArray)
         }
     }
     console.log(propertySize)
