@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 
 const book = () => {
     const [typeOfService, setTypeOfService] = useState('regular')
-    const [propertySize, setPropertySize] = useState({type: 'studio', layout: {bed: 1, bath: 1}})
-    console.log(typeOfService)
+    const [propertyType, setPropertyType] = useState('studio')
+    const [propertySize, setPropertySize] = useState({bed: 1, bath: 1})
+    const [serviceFrequency, setServiceFrequency] = useState('weekly')
+    console.log(propertySize)
 
     
     return (
@@ -19,15 +21,15 @@ const book = () => {
                 <section id="propertySize" className='flex flex-col'>
                     <h1 className='text-2xl'>2. Property Size</h1>
                     <div className='flex space-x-10'>
-                        <button>Studio</button>
-                        <button>2+ Bedroom</button>
+                        <button type="button" onClick={() => setPropertyType('studio')}>Studio</button>
+                        <button type="button" onClick={() => setPropertyType('notStudio')}>2+ Bedroom</button>
                     </div>
                     <div className='flex space-x-10'>
-                        <label>Bathrooms
-                            <input  className='w-14' name="Bathrooms" type="number" />
+                        <label>Bathrooms 
+                            <input onChange={(e) => setPropertySize({...propertySize, bath: Number(e.target.value)})} min={0} className='w-14' name="Bathrooms" type="number" />
                         </label>
                         <label>Bedrooms
-                            <input className='w-14' name="Bedrooms" type="number" />
+                            <input onChange={(e) => setPropertySize({...propertySize, bed: Number(e.target.value)})} min={0} className='w-14' name="Bedrooms" type="number" />
                         </label>
                     </div>
                 </section>
@@ -35,13 +37,13 @@ const book = () => {
                     <h1 className='text-2xl'>3. Service Frequency</h1>
                     <div className="mt-2">
                         <div>
-                            <button>Weekly</button>
+                            <button type="button" onClick={() => setServiceFrequency('weekly')}>Weekly</button>
                         </div>
                         <div>
-                            <button>BiWeekly</button>
+                            <button type="button" onClick={() => setServiceFrequency('biweekly')}>BiWeekly</button>
                         </div>
                         <div>
-                            <button>Monthly</button>
+                            <button type="button" onClick={() => setServiceFrequency('monthly')}>Monthly</button>
                         </div>
                     </div>
                 </section>
@@ -49,13 +51,13 @@ const book = () => {
                     <h1 className='text-2xl'>4. Add on Services</h1>
                     <div className="mt-2">
                         <div>
-                            <button>Washer</button>
+                            <button type="button">Washer</button>
                         </div>
                         <div>
-                            <button>Stove</button>
+                            <button type="button">Stove</button>
                         </div>
                         <div>
-                            <button>Nhingi</button>
+                            <button type="button">Nhingi</button>
                         </div>
                     </div>
                 </section>
