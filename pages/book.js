@@ -29,7 +29,7 @@ const book = () => {
                 <div className='flex items-center justify-center pt-4 pb-8'>
                     <h1 className='text-xl md:text-3xl lg:text-5xl font-headingSecondary text-black-heading'>Make Booking</h1>
                 </div>
-                <form action="" className='flex flex-col max-w-sm px-3 py-5 space-y-10 lg:max-w-xl bg-white-true'>
+                <form action="" className='flex flex-col max-w-sm px-8 py-10 mb-20 space-y-10 rounded-md lg:max-w-xl bg-white-true'>
                     <section id="typeOfServiceWrapper" className='flex flex-col'>
                         <div className='pb-5 space-y-5'>
                             <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Type of Service</h3>
@@ -102,16 +102,16 @@ const book = () => {
                         </div>
                         <div className="flex items-center justify-center mt-2 space-x-10">
                             <div>
-                                <button type="button" onClick={() => handleAddOnServices('washer')}>Washer</button>
+                                <button className='form-btn' type="button" onClick={() => handleAddOnServices('washer')}>Washer</button>
                             </div>
                             <div>
-                                <button type="button" onClick={() => handleAddOnServices('stove')}>Stove</button>
+                                <button className='form-btn' type="button" onClick={() => handleAddOnServices('stove')}>Stove</button>
                             </div>
                             <div>
-                                <button type="button" onClick={() => handleAddOnServices('nhingi')}>Nhingi</button>
+                                <button className='form-btn' type="button" onClick={() => handleAddOnServices('nhingi')}>Nhingi</button>
                             </div>
                             <div>
-                                <button type="button" onClick={() => handleAddOnServices('item')}>item here</button>
+                                <button className='form-btn' type="button" onClick={() => handleAddOnServices('item')}>item here</button>
                             </div>
                         </div>
                     </section>
