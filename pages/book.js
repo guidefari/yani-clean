@@ -36,8 +36,8 @@ const book = () => {
                             <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                         </div>
                         <div className='flex items-center justify-center space-x-10'>
-                            <button className='px-5 py-3 rounded-md font-headingSecondary bg-blue-tertiary focus:outline-none focus:ring-2 focus:ring-blue-primary focus:ring-opacity-50' type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular</button>
-                            <button className='px-5 py-3 rounded-md font-headingSecondary bg-blue-tertiary focus:outline-none focus:ring-2 focus:ring-blue-primary focus:ring-opacity-50' type="button" value='endOfTenancy' onClick={() => setTypeOfService('endOfTenancy')}>End of Tenancy</button>
+                            <button className='form-btn' type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular</button>
+                            <button className='form-btn' type="button" value='endOfTenancy' onClick={() => setTypeOfService('endOfTenancy')}>End of Tenancy</button>
                         </div>
                     </section>
                     <section id="propertySizeWrapper" className='flex flex-col'>
@@ -45,18 +45,36 @@ const book = () => {
                             <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Property Size</h3>
                             <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                         </div>
-                        <div className='flex items-center justify-center space-x-10'>
-                            <button type="button" onClick={() => setPropertyType('studio')}>Studio</button>
-                            <button type="button" onClick={() => setPropertyType('notStudio')}>2+ Bedroom</button>
+                        <div className='flex items-center justify-center pb-5 space-x-10'>
+                            <button className='form-btn' type="button" onClick={() => setPropertyType('studio')}>Studio</button>
+                            <button className='form-btn' type="button" onClick={() => setPropertyType('notStudio')}>2+ Bedroom</button>
                         </div>
-                        <div className='flex space-x-10'>
-                            <label>Bathrooms 
-                                <input onChange={(e) => setPropertySize({...propertySize, bath: Number(e.target.value)})} min={0} className='w-14' name="Bathrooms" type="number" />
-                            </label>
-                            <label>Bedrooms
-                                <input onChange={(e) => setPropertySize({...propertySize, bed: Number(e.target.value)})} min={0} className='w-14' name="Bedrooms" type="number" />
-                            </label>
-                        </div>
+                        {(propertyType === 'notStudio') && (
+                            <div className='flex items-center justify-center space-x-10'>
+                                <div>
+                                    <label htmlFor="bathrooms" className="block text-sm font-medium text-gray-700">Bathrooms</label>
+                                    <input 
+                                        type="number" 
+                                        name="bathrooms" 
+                                        id="bathrooms" 
+                                        min={0}  
+                                        className="number-input" 
+                                        onChange={(e) => setPropertySize({...propertySize, bath: Number(e.target.value)})} 
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="bedrooms" className="block text-sm font-medium text-gray-700">Bedrooms</label>
+                                    <input 
+                                        type="number" 
+                                        name="bedrooms" 
+                                        id="bedrooms" 
+                                        min={0}  
+                                        className="number-input" 
+                                        onChange={(e) => setPropertySize({...propertySize, bed: Number(e.target.value)})} 
+                                    />
+                                </div>
+                            </div>
+                        )}
                     </section>
                     {(typeOfService === 'regular' ) && (
                         <section id="serviceFrequencyWrapper" className='flex flex-col'>
@@ -66,13 +84,13 @@ const book = () => {
                             </div>
                             <div className="flex items-center justify-center mt-2 space-x-10">
                                 <div>
-                                    <button type="button" onClick={() => setServiceFrequency('weekly')}>Weekly</button>
+                                    <button className='form-btn' type="button" onClick={() => setServiceFrequency('weekly')}>Weekly</button>
                                 </div>
                                 <div>
-                                    <button type="button" onClick={() => setServiceFrequency('biweekly')}>BiWeekly</button>
+                                    <button className='form-btn' type="button" onClick={() => setServiceFrequency('biweekly')}>BiWeekly</button>
                                 </div>
                                 <div>
-                                    <button type="button" onClick={() => setServiceFrequency('monthly')}>Monthly</button>
+                                    <button className='form-btn' type="button" onClick={() => setServiceFrequency('monthly')}>Monthly</button>
                                 </div>
                             </div>
                         </section>
