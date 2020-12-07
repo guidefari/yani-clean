@@ -43,12 +43,12 @@ const ServiceAreas = () => {
                 <div className='flex pl-6 pr-10 mb-4 space-x-16'>
                     {
                         regions.map(({Area, picture}) => (
-                        <div className="relative w-full my-2 overflow-hidden bg-white rounded-lg shadow-lg " key={Area} style={{minWidth: '16rem',}}>
+                        <div className="relative w-full my-2 overflow-hidden bg-white rounded-lg shadow-lg min-w-xs" key={Area}>
                             <span className="absolute z-20 flex items-center justify-center w-8 h-8 text-yellow-600 bg-yellow-200 rounded-full top-6 left-6">
                                 <MapPin className='inline-block w-5 h-5'/>
                             </span>
                             <div className="border-t-8 border-yellow-300" style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))'}}>
-                                <img className="w-full" src={picture} alt="Profile image" />
+                                <img className="w-full min-h-sm max-h-md" src={picture} alt="Profile image" />
                             </div>
                             <div className="pt-6 pb-12 text-center text-gray-600">
                                 <h3 className="text-2xl font-headingSecondary text-black-heading">{Area}</h3>
