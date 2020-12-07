@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content={og ? og.image : `https://yani-clean.vercel.app/assets/default.png`} />
         <link rel="shortcut icon" href="/assets/default.png" />
 
+
         <title>{title || `Yani Cleaning Services`}</title>
       </Head>
     
