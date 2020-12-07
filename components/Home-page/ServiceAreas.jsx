@@ -5,31 +5,31 @@ const ServiceAreas = () => {
     const regions = [
         {
             Area: 'North West Of England',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1463580622115-e5067416fadb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
         },
         {
             Area: 'Greater Manchester',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1559825905-b0c4c02a83b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=506&q=80',
         },
         {
             Area: 'Bolton',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1519635223365-d61c894d840d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
         },
         {
             Area: 'Oldham',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1583872074275-141e3ba5d4e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
         },
         {
             Area: 'Manchester City',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1550945160-35ad09cb2186?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
         },
         {
             Area: 'Salford',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1592396516512-259a40d105aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
         },
         {
             Area: 'Bury Areas',
-            picture: 'https://images.unsplash.com/photo-1536260853340-dfb1cbc13a57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80',
+            picture: 'https://images.unsplash.com/photo-1552992052-4d3c95f086c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
         },
     ]
 
