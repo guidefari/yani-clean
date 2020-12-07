@@ -2,7 +2,7 @@ import { ArrowRight } from "react-feather";
 
 const Pricing = () => {
     return (
-            <section className='bg-gradient-to-b from-white-true to-white-primary xl:mx-12 mx-14 pb-14'>
+            <section className=' xl:mx-12 mx-14 pb-14'>
                 <div className="container max-w-full px-6 py-10 mx-auto lg:py-24">
                     <div className='flex flex-col md:flex-row md:justify-between'>
                         <h1 className="text-xl md:text-3xl lg:text-5xl font-heading text-black-heading">
@@ -17,7 +17,7 @@ const Pricing = () => {
                     <div className="max-w-full mx-auto my-3 md:max-w-6xl md:px-8">
                         <div className="relative flex flex-col items-center block lg:flex-row lg:space-x-2">
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 ">
-                                <div className="overflow-hidden text-black rounded-lg shadow-lg bg-blue-secondary ">
+                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg ">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
                                         <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             Carpet Cleaning 
@@ -49,7 +49,7 @@ const Pricing = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative z-10 w-full max-w-md my-8 rounded-lg shadow-lg bg-blue-secondary sm:w-2/3 lg:w-1/3 sm:my-5">
+                            <div className="relative z-10 w-full max-w-md my-8 bg-blue-700 rounded-lg shadow-lg sm:w-2/3 lg:w-1/3 sm:my-5">
                                 <div className="py-4 text-sm font-semibold leading-none tracking-wide text-center uppercase rounded-t-lg text-black-heading bg-blue-shadowTwo">
                                     Most Popular
                                 </div>
@@ -97,7 +97,7 @@ const Pricing = () => {
                                 </div>
                             </div>
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-ml-4">
-                                <div className="overflow-hidden text-black rounded-lg shadow-lg bg-blue-secondary ">
+                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg ">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
                                         <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             End of Tenancy
