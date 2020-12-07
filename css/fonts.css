@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: 'Cairo-Bold';
-    src: url('/assets/fonts/Cairo-Bold.ttf');
+    src: url('/assets/fonts/raleway/static/Raleway-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Cairo-Semi-Bold';
-    src: url('/assets/fonts/Cairo-SemiBold.ttf');
+    src: url('/assets/fonts/raleway/static/Raleway-SemiBold.ttf');
     font-weight: medium;
 }
