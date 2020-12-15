@@ -134,7 +134,7 @@ const book = () => {
                             </div>
                         </section>
                     </div>
-                    <div id='detailsConfirm' className="sticky col-span-1 px-5 py-10 bg-gray-300 top-20 max-h-96">
+                    <div id='detailsConfirm' className="sticky flex flex-col justify-between col-span-1 px-5 pt-10 pb-12 space-y-5 bg-white-secondary top-20 h-52">
                         <section>
                             <h3 className='text-sm font-heading text-black-heading'>{(typeOfService === 'regular' ) ? `${serviceFrequency} Cleaning Plan` : `End of Tenancy Cleaning Plan`} </h3>
                             <div className='text-xs'>
