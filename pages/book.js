@@ -134,13 +134,24 @@ const book = () => {
                             </div>
                         </section>
                     </div>
-                    <div id='detailsConfirm' className="col-span-1 px-5 py-10 bg-gray-300 max-h-96">
+                    <div id='detailsConfirm' className="sticky col-span-1 px-5 py-10 bg-gray-300 top-20 max-h-96">
                         <section>
                             <h3 className='text-sm font-heading text-black-heading'>{(typeOfService === 'regular' ) ? `${serviceFrequency} Cleaning Plan` : `End of Tenancy Cleaning Plan`} </h3>
                             <div className='text-xs'>
                                 {propertySize.bed} bed, {propertySize.bath} bath
                             </div>
                         </section>
+                        {(addOnServices.length > 0) && (
+                            <section>
+                                <h3 className='text-sm font-heading text-black-heading'>Add on Services </h3>
+                                <div className='flex flex-row flex-wrap space-x-3 text-xs'>
+                                    {addOnServices.map((service) => <span>{service}</span>)}
+                                </div>
+                            </section>
+                        )}
+                        <button type='submit' className="inline-flex items-center px-3 py-1 my-5 text-base font-semibold border-0 rounded text-blue-primary bg-blue-shadowOne focus:outline-none hover:bg-blue-shadowTwo ">
+                            Confirm Booking
+                        </button>
                     </div>
                 </form>
             </div>
