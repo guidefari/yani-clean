@@ -5,7 +5,7 @@ const book = () => {
     const [typeOfService, setTypeOfService] = useState('regular')
     const [propertyType, setPropertyType] = useState('studio')
     const [propertySize, setPropertySize] = useState({bed: 1, bath: 1})
-    const [serviceFrequency, setServiceFrequency] = useState('weekly')
+    const [serviceFrequency, setServiceFrequency] = useState('Weekly')
     const [addOnServices, setAddOnServices] = useState([])
 
     const handleAddOnServices = (serviceYacho) => {
@@ -19,6 +19,23 @@ const book = () => {
             setAddOnServices([...addOnServices])
         }
     }
+
+    const handlePropertyType = (type) => {
+        switch (type) {
+            case 'studio':
+                setPropertyType('studio')
+                setPropertySize({bed: 1, bath: 1})
+                break;
+            case 'notStudio':
+                setPropertyType('notStudio')
+                setPropertySize({bed: 2, bath: 1})
+                break;
+        
+            default:
+                break;
+        }
+    }
+    
     console.log(propertySize)
 
     
@@ -47,22 +64,11 @@ const book = () => {
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                             </div>
                             <div className='flex items-center justify-center pb-5 space-x-10'>
-                                <button className='form-btn' type="button" onClick={() => setPropertyType('studio')}>Studio</button>
-                                <button className='form-btn' type="button" onClick={() => setPropertyType('notStudio')}>2+ Bedroom</button>
+                                <button className='form-btn' type="button" onClick={() => handlePropertyType('notStudio')}>2+ Bedroom</button>
+                                <button className='form-btn' type="button" onClick={() => handlePropertyType('studio')}>Studio</button>
                             </div>
                             {(propertyType === 'notStudio') && (
                                 <div className='flex items-center justify-center space-x-10'>
-                                    <div>
-                                        <label htmlFor="bathrooms" className="block text-sm font-medium text-gray-700">Bathrooms</label>
-                                        <input 
-                                            type="number" 
-                                            name="bathrooms" 
-                                            id="bathrooms" 
-                                            min={0}  
-                                            className="number-input" 
-                                            onChange={(e) => setPropertySize({...propertySize, bath: Number(e.target.value)})} 
-                                        />
-                                    </div>
                                     <div>
                                         <label htmlFor="bedrooms" className="block text-sm font-medium text-gray-700">Bedrooms</label>
                                         <input 
@@ -72,6 +78,17 @@ const book = () => {
                                             min={0}  
                                             className="number-input" 
                                             onChange={(e) => setPropertySize({...propertySize, bed: Number(e.target.value)})} 
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="bathrooms" className="block text-sm font-medium text-gray-700">Bathrooms</label>
+                                        <input 
+                                            type="number" 
+                                            name="bathrooms" 
+                                            id="bathrooms" 
+                                            min={0}  
+                                            className="number-input" 
+                                            onChange={(e) => setPropertySize({...propertySize, bath: Number(e.target.value)})} 
                                         />
                                     </div>
                                 </div>
@@ -85,13 +102,13 @@ const book = () => {
                                 </div>
                                 <div className="flex items-center justify-center mt-2 space-x-10">
                                     <div>
-                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('weekly')}>Weekly</button>
+                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('Weekly')}>Weekly</button>
                                     </div>
                                     <div>
-                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('biweekly')}>BiWeekly</button>
+                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('BiWeekly')}>BiWeekly</button>
                                     </div>
                                     <div>
-                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('monthly')}>Monthly</button>
+                                        <button className='form-btn' type="button" onClick={() => setServiceFrequency('Monthly')}>Monthly</button>
                                     </div>
                                 </div>
                             </section>
@@ -117,10 +134,12 @@ const book = () => {
                             </div>
                         </section>
                     </div>
-                    <div id='detailsConfirm' className="col-span-1 py-10 bg-gray-700 max-h-96">
+                    <div id='detailsConfirm' className="col-span-1 px-5 py-10 bg-gray-300 max-h-96">
                         <section>
-
-                            <button className='form-btn' type="submit" onClick={() => ''}>item here</button>
+                            <h3 className='text-sm font-heading text-black-heading'>{(typeOfService === 'regular' ) ? `${serviceFrequency} Cleaning Plan` : `End of Tenancy Cleaning Plan`} </h3>
+                            <div className='text-xs'>
+                                {propertySize.bed} bed, {propertySize.bath} bath
+                            </div>
                         </section>
                     </div>
                 </form>
