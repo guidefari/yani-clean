@@ -46,7 +46,7 @@ const book = () => {
                 <div className='flex items-center justify-center pt-4 pb-8'>
                     <h1 className='text-xl md:text-3xl lg:text-5xl font-headingSecondary text-black-heading'>Make Booking</h1>
                 </div>
-                <form action="" className='grid grid-cols-3 gap-4 '>
+                <form name="booking" method="POST" data-netlify="true" className='grid grid-cols-3 gap-4 '>
                     <div id='detailsInput' className='max-w-sm col-span-2 px-8 py-10 mb-20 space-y-10 rounded-md lg:max-w-xl bg-white-true'>
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
