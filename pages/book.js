@@ -36,7 +36,7 @@ const book = () => {
         }
     }
     
-    console.log(propertySize)
+    console.log(propertySize.bed)
 
     
     return (
@@ -50,7 +50,8 @@ const book = () => {
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" defaultValue="booking" />
                         <input type="hidden" name='property-type' value={propertyType}/>
-                        <input type="hidden" name='property-size' value={propertySize}/>
+                        <input type="hidden" name='property-size-bed' value={propertySize.bed}/>
+                        <input type="hidden" name='property-size-bath' value={propertySize.bath}/>
                         <input type="hidden" name='type-of-service' value={typeOfService}/>
                         <input type="hidden" name='service-frequency' value={serviceFrequency}/>
                         <input type="hidden" name='addOnServices' value={addOnServices}/>
