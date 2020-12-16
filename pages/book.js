@@ -49,6 +49,7 @@ const book = () => {
                 <form name="booking" method="POST" data-netlify="true" className='grid grid-cols-3 gap-4 '>
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" defaultValue="booking" />
+                        <input type="hidden" name='property-type' value={propertyType}/>
 
                     <div id='detailsInput' className='max-w-sm col-span-2 px-8 py-10 mb-20 space-y-10 rounded-md lg:max-w-xl bg-white-true'>
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
