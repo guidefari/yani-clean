@@ -6,14 +6,14 @@ const Hero = () => {
         <div className='relative flex items-start justify-center mx-3 shadow shadow-md sm:items-center min-h-sm md:bg-blue-300 sm:mt-6 md:mt-0 lg:py-10'>
             <div className='absolute flex items-center justify-center md:static md:w-1/2'>
                 <div className='relative lg:pl-10'>
-                    <Image
+                    <img
                         src='/assets/hero.png'
                         title='Hero image'
                         alt='Lady shaking a rug'
-                        width={735}
-                        height={500}
-                        quality={100}
-                        className='h-full rounded-none'
+                        // width={735}
+                        // height={500}
+                        // quality={100}
+                        className='h-full pb-5 rounded-none'
                     />
                     <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br from-blue-primary to-blue-secondary manual-height md:hidden'/>
                 </div>
