@@ -50,6 +50,10 @@ const book = () => {
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" defaultValue="booking" />
                         <input type="hidden" name='property-type' value={propertyType}/>
+                        <input type="hidden" name='property-size' value={propertySize}/>
+                        <input type="hidden" name='type-of-service' value={typeOfService}/>
+                        <input type="hidden" name='service-frequency' value={serviceFrequency}/>
+                        <input type="hidden" name='addOnServices' value={addOnServices}/>
 
                     <div id='detailsInput' className='max-w-sm col-span-2 px-8 py-10 mb-20 space-y-10 rounded-md lg:max-w-xl bg-white-true'>
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
@@ -144,14 +148,38 @@ const book = () => {
                             <div className="flex flex-wrap -m-2">
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="name" className="text-sm leading-7 text-gray-600">Name</label>
-                                    <input type="text" id="name" name="name" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <label htmlFor="firstName" className="text-sm leading-7 text-gray-600">First Name</label>
+                                    <input type="firstName" id="firstName" name="firstName" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="email" className="text-sm leading-7 text-gray-600">Email</label>
-                                    <input type="email" id="email" name="email" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <label htmlFor="surname" className="text-sm leading-7 text-gray-600">Surname</label>
+                                    <input type="text" id="surname" name="surname" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="streetAddress" className="text-sm leading-7 text-gray-600">Street Address</label>
+                                    <input type="streetAddress" id="streetAddress" name="streetAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="apartmentNumber" className="text-sm leading-7 text-gray-600">Apartment Number</label>
+                                    <input type="text" id="apartmentNumber" name="apartmentNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="city" className="text-sm leading-7 text-gray-600">City</label>
+                                    <input type="city" id="city" name="city" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="phoneNumber" className="text-sm leading-7 text-gray-600">Phone Number</label>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                             </div>
