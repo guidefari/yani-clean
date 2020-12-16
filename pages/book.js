@@ -47,6 +47,9 @@ const book = () => {
                     <h1 className='text-xl md:text-3xl lg:text-5xl font-headingSecondary text-black-heading'>Make Booking</h1>
                 </div>
                 <form name="booking" method="POST" data-netlify="true" className='grid grid-cols-3 gap-4 '>
+                        <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" defaultValue="booking" />
+
                     <div id='detailsInput' className='max-w-sm col-span-2 px-8 py-10 mb-20 space-y-10 rounded-md lg:max-w-xl bg-white-true'>
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
@@ -130,6 +133,25 @@ const book = () => {
                                 </div>
                                 <div>
                                     <button className='form-btn' type="button" onClick={() => handleAddOnServices('item')}>item here</button>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="address" className='flex flex-col'>
+                            <div className='pb-5 space-y-5'>
+                                <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Address</h3>
+                            </div>
+                            <div className="flex flex-wrap -m-2">
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="name" className="text-sm leading-7 text-gray-600">Name</label>
+                                    <input type="text" id="name" name="name" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="email" className="text-sm leading-7 text-gray-600">Email</label>
+                                    <input type="email" id="email" name="email" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
                                 </div>
                             </div>
                         </section>
