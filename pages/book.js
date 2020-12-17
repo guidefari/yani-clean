@@ -129,16 +129,29 @@ const book = () => {
                             </div>
                             <div className="flex items-center justify-center mt-2 space-x-10">
                                 <div>
-                                    <button className='form-btn' type="button" onClick={() => handleAddOnServices('washer')}>Washer</button>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('stove')}>
+                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/gas-stove.svg" alt="stove icon"/>
+                                    </button>
                                 </div>
                                 <div>
-                                    <button className='form-btn' type="button" onClick={() => handleAddOnServices('stove')}>Stove</button>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('closet')}>
+                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/closet.svg" alt="closet icon"/>
+                                    </button>
                                 </div>
                                 <div>
-                                    <button className='form-btn' type="button" onClick={() => handleAddOnServices('nhingi')}>Nhingi</button>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('fridge')}>
+                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/fridge.svg" alt="fridge icon"/>
+                                    </button>
                                 </div>
                                 <div>
-                                    <button className='form-btn' type="button" onClick={() => handleAddOnServices('item')}>item here</button>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('carpetCleaning')}>
+                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/vacuum-cleaner.svg" alt="vacuum icon"/>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('ironing')}>
+                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/iron.svg" alt="iron icon"/>
+                                    </button>
                                 </div>
                             </div>
                         </section>
