@@ -17,7 +17,7 @@ const Pricing = () => {
                     <div className="max-w-full mx-auto my-3 md:max-w-6xl md:px-8">
                         <div className="relative flex flex-col items-center block lg:flex-row lg:space-x-2">
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 ">
-                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg ">
+                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg pb-14">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
                                         <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             Carpet Cleaning 
@@ -42,14 +42,9 @@ const Pricing = () => {
                                         </li>
                                     </ul> 
                                     </div>  
-                                    <div className="flex items-center block p-8 uppercase">
-                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
-                                        Select
-                                    </button>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="relative z-10 w-full max-w-md my-8 bg-blue-700 rounded-lg shadow-lg sm:w-2/3 lg:w-1/3 sm:my-5">
+                            <div className="relative z-10 w-full max-w-md my-8 bg-blue-700 rounded-lg shadow-lg sm:w-2/3 lg:w-1/3 sm:my-5 pb-14">
                                 <div className="py-4 text-sm font-semibold leading-none tracking-wide text-center uppercase rounded-t-lg text-black-heading bg-blue-shadowTwo">
                                     Most Popular
                                 </div>
@@ -90,14 +85,9 @@ const Pricing = () => {
                                     </li>
                                     </ul>
                                 </div>
-                                <div className="flex items-center block p-8 uppercase">
-                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
-                                    Select
-                                    </button>
-                                </div>
                             </div>
                             <div className="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-ml-4">
-                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg ">
+                                <div className="overflow-hidden text-black bg-blue-700 rounded-lg shadow-lg pb-14">
                                     <div className="block max-w-sm px-8 mx-auto mt-2 text-sm text-left text-black sm:text-md lg:px-6">
                                         <h1 className="p-3 pb-10 text-base font-medium tracking-wide text-center uppercase font-heading xl:text-lg text-white-secondary">
                                             End of Tenancy
@@ -121,11 +111,6 @@ const Pricing = () => {
                                         <span className="ml-3 text-sm text-blue-shadowTwo"><span className='font-bold text-yellow-primary'>£160</span> for end of tenancy cleaning for a 3-bedroom house</span>
                                         </li>
                                     </ul>
-                                    </div>
-                                    <div className="flex items-center block p-8 uppercase">
-                                    <button className="inline-flex items-center px-3 py-1 mx-auto text-base font-semibold border-0 rounded text-white-primary bg-blue-primary focus:outline-none hover:bg-blue-shadowOne hover:text-blue-primary">
-                                        Select
-                                    </button>
                                     </div>
                                 </div>
                             </div>
