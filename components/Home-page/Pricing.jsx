@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 const Pricing = () => {
     return (
-            <section className=' xl:mx-12 mx-14 pb-14'>
+            <section className=' xl:mx-12 sm:mx-14 pb-14'>
                 <div className="container max-w-full px-6 py-10 mx-auto lg:py-24">
                     <div className='flex flex-col md:flex-row md:justify-between'>
                         <h1 className="text-xl md:text-3xl lg:text-5xl font-heading text-black-heading">
                             What we can do<br className='hidden md:inline'/> for you
                         </h1>
-                        <p className="mt-2 text-lg text-left text-gray-700 sm:max-w-sm lg:max-w-md md:px-6 md:text-right">
+                        <p className="hidden mt-2 text-lg text-left text-gray-700 sm:block sm:max-w-sm lg:max-w-md md:px-6 md:text-right">
                             <Link href='/book'><a className='pb-3 basic-animation text-blue-primary hover:border-blue-900 hover:border-b-2'>Make a booking now <ArrowRight className='inline text-yellow-primary animate-pulse'/></a></Link>
                         </p>
                     </div>

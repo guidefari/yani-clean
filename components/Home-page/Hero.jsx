@@ -3,19 +3,16 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='relative flex items-start justify-center mx-3 shadow shadow-md sm:items-center min-h-sm md:bg-blue-300 sm:mt-6 md:mt-0 lg:py-10'>
+        <div className='relative flex items-center justify-center mx-3 sm:shadow sm:shadow-md sm:pt-14 min-h-sm md:bg-blue-300 sm:mt-6 md:mt-0 lg:py-10'>
             <div className='absolute flex items-center justify-center md:static md:w-1/2'>
                 <div className='relative lg:pl-10'>
                     <img
                         src='/assets/hero.png'
                         title='Hero image'
                         alt='Lady shaking a rug'
-                        // width={735}
-                        // height={500}
-                        // quality={100}
-                        className='h-full pb-5 rounded-none'
+                        className='pb-5 rounded-none sm:h-full'
                     />
-                    <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br from-blue-primary to-blue-secondary manual-height md:hidden'/>
+                    <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br -pb-5 from-blue-primary to-blue-secondary manual-height md:hidden'/>
                 </div>
             </div>
             <div className='absolute my-auto md:w-1/2 md:static'>
