@@ -12,7 +12,7 @@ const Hero = () => {
                         alt='Lady shaking a rug'
                         className='pb-5 rounded-none sm:h-full'
                     />
-                    <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br -pb-5 from-blue-primary to-blue-secondary manual-height md:hidden'/>
+                    <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br from-blue-primary to-blue-secondary manual-height md:hidden'/>
                 </div>
             </div>
             <div className='absolute my-auto md:w-1/2 md:static'>
