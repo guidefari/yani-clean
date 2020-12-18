@@ -10,7 +10,7 @@ const Pricing = () => {
                             What we can do<br className='hidden md:inline'/> for you
                         </h1>
                         <p className="mt-2 text-lg text-left text-gray-700 sm:max-w-sm lg:max-w-md md:px-6 md:text-right">
-                            <Link href='/book'><a className='pb-3 transition duration-500 ease-in-out text-blue-primary hover:border-blue-900 hover:border-b-2'>Make a booking now <ArrowRight className='inline text-blue-900 animate-pulse'/></a></Link>
+                            <Link href='/book'><a className='pb-3 basic-animation text-blue-primary hover:border-blue-900 hover:border-b-2'>Make a booking now <ArrowRight className='inline text-yellow-primary animate-pulse'/></a></Link>
                         </p>
                     </div>
                     <div className="w-24 h-1 mx-auto my-4 rounded opacity-75 md:my-8 xl:my-10 bg-yellow-secondary" />
