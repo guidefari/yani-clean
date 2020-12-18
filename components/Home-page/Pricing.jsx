@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Pricing = () => {
     return (
-            <section className=' xl:mx-12 sm:mx-14 pb-14'>
+            <section className=' xl:mx-12 sm:mx-14'>
                 <div className="container max-w-full px-6 py-10 mx-auto lg:py-24">
                     <div className='flex flex-col md:flex-row md:justify-between'>
                         <h1 className="text-xl md:text-3xl lg:text-5xl font-heading text-black-heading">
