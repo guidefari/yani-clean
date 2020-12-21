@@ -8,9 +8,9 @@ function Layout(props) {
       <main className="flex-1 w-full mx-auto ">
         {props.children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

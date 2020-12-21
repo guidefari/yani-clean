@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <title>{title || `Yani Cleaning Services`}</title>
       </Head>
     
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   ) 
   
