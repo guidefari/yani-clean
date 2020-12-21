@@ -12,7 +12,7 @@ function Header() {
                     <Link href='/about' className="mr-5 hover:text-gray-900">About</Link>
                     <Link href='/work4us' className="mr-5 hover:text-gray-900">Work for us</Link>
                     <Link href='/book'>
-                        <button className="inline-flex items-center px-3 py-1 text-base font-semibold border-0 rounded text-blue-primary bg-blue-shadowOne focus:outline-none hover:bg-blue-shadowTwo ">
+                        <button className="inline-flex items-center px-3 py-1 text-base font-semibold border-0 rounded basic-animation focus:ring-2 hover:ring-2 text-blue-primary bg-blue-shadowOne focus:outline-none hover:bg-blue-shadowTwo ">
                             Book Now
                         </button>
                     </Link>
