@@ -61,7 +61,7 @@ const book = () => {
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Type of Service</h3>
-                                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
+                                <p className='text-sm'>Do you need regular cleaning services or a once off, end of tenancy cleaning?</p>
                             </div>
                                 <div className='flex items-center justify-center space-x-10 '>
                                     <button className='leading-4 form-btn' type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular Service</button>
@@ -71,7 +71,7 @@ const book = () => {
                         <section id="propertySizeWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Property Size</h3>
-                                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
+                                <p className='text-sm'>Studio flat or a home with more than one bedroom and bathroom</p>
                             </div>
                                 <div className='flex items-center justify-center space-x-10 '>
                                     <button className='form-btn' type="button" onClick={() => handlePropertyType('notStudio')}>2+ Bed</button>
@@ -108,7 +108,7 @@ const book = () => {
                             <section id="serviceFrequencyWrapper" className='flex flex-col'>
                                 <div className='pb-5 space-y-5'>
                                     <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Service Frequency</h3>
-                                    <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
+                                    <p className='text-sm'>How often will you need cleaning services?</p>
                                 </div>
                                 <div className="flex items-center justify-center mt-2 space-x-5 sm:space-x-10">
                                     <div>
@@ -126,33 +126,38 @@ const book = () => {
                         <section id="addOnServicesWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Add on Services</h3>
-                                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
+                                <p className='text-sm'>Do you need any extras for your booking?</p>
                             </div>
                             <div className="flex flex-wrap items-center justify-center mt-2 space-x-5 lg:space-x-7">
-                                <div>
-                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('stove')}>
+                                <div className='flex flex-col items-center justify-between pb-1 space-y-2'>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('Stove')}>
                                         <img className='service-logo-svg' src="/assets/service-logos/gas-stove.svg" alt="stove icon"/>
                                     </button>
+                                    <span className='text-xs text-gray-400 '>Inside Stove</span>
                                 </div>
-                                <div>
-                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('closet')}>
+                                <div className='flex flex-col items-center justify-between pb-1 space-y-2'>
+                                    <button className='text-blue-700 form-btn-service' type="button" onClick={() => handleAddOnServices('Closet')}>
                                         <img className='service-logo-svg' src="/assets/service-logos/closet.svg" alt="closet icon"/>
                                     </button>
+                                    <span className='text-xs text-gray-400 '>Inside Closet</span>
                                 </div>
-                                <div>
-                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('fridge')}>
+                                <div className='flex flex-col items-center justify-between pb-1 space-y-2'>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('Fridge')}>
                                         <img className='service-logo-svg' src="/assets/service-logos/fridge.svg" alt="fridge icon"/>
                                     </button>
+                                    <span className='text-xs text-gray-400 '>Inside Fridge</span>
                                 </div>
-                                <div>
-                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('carpetCleaning')}>
+                                <div className='flex flex-col items-center justify-between pb-1 space-y-2'>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('Carpet Cleaning')}>
                                         <img className='service-logo-svg' src="/assets/service-logos/vacuum-cleaner.svg" alt="vacuum icon"/>
                                     </button>
+                                    <span className='text-xs text-gray-400 '>Carpet Cleaning</span>
                                 </div>
-                                <div>
-                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('ironing')}>
+                                <div className='flex flex-col items-center justify-between pb-1 space-y-2'>
+                                    <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('Ironing')}>
                                         <img className='service-logo-svg' src="/assets/service-logos/iron.svg" alt="iron icon"/>
                                     </button>
+                                    <span className='text-xs text-gray-400 '>Ironing</span>
                                 </div>
                             </div>
                         </section>
