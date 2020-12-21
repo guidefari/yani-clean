@@ -211,7 +211,7 @@ const book = () => {
                             </div>
                         </section>
                     </div>
-                    <div id='detailsConfirm' className="sticky flex flex-col justify-between px-5 pt-10 pb-12 space-y-5 rounded-md md:col-span-1 bg-white-secondary top-20 h-52">
+                    <div id='detailsConfirm' className="sticky flex flex-col justify-between px-5 pt-10 pb-12 space-y-5 rounded-md md:col-span-1 bg-blue-shadowTwo top-20 h-52">
                         <section>
                             <h3 className='text-sm font-heading text-black-heading'>{(typeOfService === 'regular' ) ? `${serviceFrequency} Cleaning Plan` : `End of Tenancy Cleaning Plan`} </h3>
                             <div className='text-xs'>
@@ -226,7 +226,7 @@ const book = () => {
                                 </div>
                             </section>
                         )}
-                        <button type='submit' className="inline-flex items-center justify-center px-3 py-1 my-5 text-base font-semibold border-0 rounded text-blue-primary bg-blue-shadowOne focus:outline-none hover:bg-blue-shadowTwo ">
+                        <button type='submit' className="inline-flex items-center justify-center px-3 py-1 my-5 text-base font-semibold border-0 rounded hover:shadow-md basic-animation text-blue-primary bg-blue-shadowOne focus:outline-none hover:ring-2 hover:bg-blue-shadowTwo ">
                             Confirm Booking
                         </button>
                     </div>
