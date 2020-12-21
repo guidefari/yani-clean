@@ -44,9 +44,9 @@ const book = () => {
 
             <div className='container flex flex-col items-center justify-center min-h-xs'>
                 <div className='flex items-center justify-center pt-4 pb-8'>
-                    <h1 className='text-xl md:text-3xl lg:text-5xl font-headingSecondary text-black-heading'>Make Booking</h1>
+                    <h1 className='text-xl underline md:text-3xl lg:text-5xl font-headingSecondary text-black-heading'>Make Booking</h1>
                 </div>
-                <form name="booking" method="POST" data-netlify="true" className='grid grid-cols-1 lg:grid-cols-3 lg:gap-4 '>
+                <form name="booking" method="POST" data-netlify="true" className='grid grid-cols-1 md:grid-cols-3 md:gap-4 '>
                     <>
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" defaultValue="booking" />
@@ -57,7 +57,7 @@ const book = () => {
                         <input type="hidden" name='service-frequency' value={serviceFrequency}/>
                         <input type="hidden" name='addOnServices' value={addOnServices}/>
                     </>
-                    <div id='detailsInput' className='max-w-md px-8 py-10 space-y-10 rounded-md md:max-w-sm md:mb-20 md:col-span-2 lg:max-w-xl bg-white-true'>
+                    <div id='detailsInput' className='max-w-lg px-8 py-10 space-y-10 rounded-md md:max-w-md md:mb-20 md:col-span-2 lg:max-w-xl bg-white-true'>
                         <section id="typeOfServiceWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Type of Service</h3>
@@ -163,50 +163,50 @@ const book = () => {
                             <div className="flex flex-wrap -m-2">
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="firstName" className="text-sm leading-7 text-gray-600">First Name</label>
+                                    <label htmlFor="firstName" className="text-xs leading-7 text-gray-600 lg:text-sm">First Name</label>
                                     <input required type="firstName" id="firstName" name="firstName" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="surname" className="text-sm leading-7 text-gray-600">Surname</label>
+                                    <label htmlFor="surname" className="text-xs leading-7 text-gray-600 lg:text-sm">Surname</label>
                                     <input required type="text" id="surname" name="surname" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="streetAddress" className="text-sm leading-7 text-gray-600">Street Address</label>
+                                    <label htmlFor="streetAddress" className="text-xs leading-7 text-gray-600 lg:text-sm">Street Address</label>
                                     <input required type="streetAddress" id="streetAddress" name="streetAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="apartmentNumber" className="text-sm leading-7 text-gray-600">Apartment Number</label>
+                                    <label htmlFor="apartmentNumber" className="text-xs leading-7 text-gray-600 lg:text-sm">Apartment Number</label>
                                     <input type="text" id="apartmentNumber" name="apartmentNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="city" className="text-sm leading-7 text-gray-600">City</label>
+                                    <label htmlFor="city" className="text-xs leading-7 text-gray-600 lg:text-sm">City</label>
                                     <input required type="city" id="city" name="city" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="phoneNumber" className="text-sm leading-7 text-gray-600">Phone Number</label>
+                                    <label htmlFor="phoneNumber" className="text-xs leading-7 text-gray-600 lg:text-sm">Phone Number</label>
                                     <input required type="text" id="phoneNumber" name="phoneNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
-                                    <label htmlFor="emailAddress" className="text-sm leading-7 text-gray-600">Email Address</label>
+                                    <label htmlFor="emailAddress" className="text-xs leading-7 text-gray-600 lg:text-sm">Email Address</label>
                                     <input required type="text" id="emailAddress" name="emailAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </div>
-                    <div id='detailsConfirm' className="sticky flex flex-col justify-between px-5 pt-10 pb-12 space-y-5 md:col-span-1 bg-white-secondary top-20 h-52">
+                    <div id='detailsConfirm' className="sticky flex flex-col justify-between px-5 pt-10 pb-12 space-y-5 rounded-md md:col-span-1 bg-white-secondary top-20 h-52">
                         <section>
                             <h3 className='text-sm font-heading text-black-heading'>{(typeOfService === 'regular' ) ? `${serviceFrequency} Cleaning Plan` : `End of Tenancy Cleaning Plan`} </h3>
                             <div className='text-xs'>
