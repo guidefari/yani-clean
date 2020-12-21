@@ -62,20 +62,20 @@ const book = () => {
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Type of Service</h3>
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                             </div>
-                            <div className='flex items-center justify-center space-x-10'>
-                                <button className='form-btn' type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular</button>
-                                <button className='form-btn' type="button" value='endOfTenancy' onClick={() => setTypeOfService('endOfTenancy')}>End of Tenancy</button>
-                            </div>
+                                <div className='flex items-center justify-center space-x-10 '>
+                                    <button className='leading-4 form-btn' type="button" value='regular' onClick={() => setTypeOfService('regular')}>Regular Service</button>
+                                    <button className='leading-4 form-btn' type="button" value='endOfTenancy' onClick={() => setTypeOfService('endOfTenancy')}>End of Tenancy</button>
+                                </div>
                         </section>
                         <section id="propertySizeWrapper" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Property Size</h3>
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                             </div>
-                            <div className='flex items-center justify-center pb-5 space-x-10'>
-                                <button className='form-btn' type="button" onClick={() => handlePropertyType('notStudio')}>2+ Bedroom</button>
-                                <button className='form-btn' type="button" onClick={() => handlePropertyType('studio')}>Studio</button>
-                            </div>
+                                <div className='flex items-center justify-center pb-5 space-x-10 '>
+                                    <button className='form-btn' type="button" onClick={() => handlePropertyType('notStudio')}>2+ Bed</button>
+                                    <button className='form-btn' type="button" onClick={() => handlePropertyType('studio')}>Studio</button>
+                                </div>
                             {(propertyType === 'notStudio') && (
                                 <div className='flex items-center justify-center space-x-10'>
                                     <div>
@@ -127,35 +127,35 @@ const book = () => {
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Add on Services</h3>
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, itaque!</p>
                             </div>
-                            <div className="flex items-center justify-center mt-2 space-x-10">
+                            <div className="flex flex-wrap items-center justify-center mt-2 space-x-5 lg:space-x-7">
                                 <div>
                                     <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('stove')}>
-                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/gas-stove.svg" alt="stove icon"/>
+                                        <img className='service-logo-svg' src="/assets/service-logos/gas-stove.svg" alt="stove icon"/>
                                     </button>
                                 </div>
                                 <div>
                                     <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('closet')}>
-                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/closet.svg" alt="closet icon"/>
+                                        <img className='service-logo-svg' src="/assets/service-logos/closet.svg" alt="closet icon"/>
                                     </button>
                                 </div>
                                 <div>
                                     <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('fridge')}>
-                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/fridge.svg" alt="fridge icon"/>
+                                        <img className='service-logo-svg' src="/assets/service-logos/fridge.svg" alt="fridge icon"/>
                                     </button>
                                 </div>
                                 <div>
                                     <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('carpetCleaning')}>
-                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/vacuum-cleaner.svg" alt="vacuum icon"/>
+                                        <img className='service-logo-svg' src="/assets/service-logos/vacuum-cleaner.svg" alt="vacuum icon"/>
                                     </button>
                                 </div>
                                 <div>
                                     <button className='form-btn-service' type="button" onClick={() => handleAddOnServices('ironing')}>
-                                        <img className='inline-block w-12 h-12' src="/assets/service-logos/iron.svg" alt="iron icon"/>
+                                        <img className='service-logo-svg' src="/assets/service-logos/iron.svg" alt="iron icon"/>
                                     </button>
                                 </div>
                             </div>
                         </section>
-                        <section id="address" className='flex flex-col'>
+                        <section id="clientDetails" className='flex flex-col'>
                             <div className='pb-5 space-y-5'>
                                 <h3 className='text-lg md:text-2xl lg:text-4xl font-heading text-black-heading'>Address</h3>
                             </div>
@@ -163,19 +163,19 @@ const book = () => {
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
                                     <label htmlFor="firstName" className="text-sm leading-7 text-gray-600">First Name</label>
-                                    <input type="firstName" id="firstName" name="firstName" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <input required type="firstName" id="firstName" name="firstName" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
                                     <label htmlFor="surname" className="text-sm leading-7 text-gray-600">Surname</label>
-                                    <input type="text" id="surname" name="surname" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <input required type="text" id="surname" name="surname" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
                                     <label htmlFor="streetAddress" className="text-sm leading-7 text-gray-600">Street Address</label>
-                                    <input type="streetAddress" id="streetAddress" name="streetAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <input required type="streetAddress" id="streetAddress" name="streetAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
@@ -187,13 +187,19 @@ const book = () => {
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
                                     <label htmlFor="city" className="text-sm leading-7 text-gray-600">City</label>
-                                    <input type="city" id="city" name="city" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <input required type="city" id="city" name="city" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                                 <div className="w-1/2 p-2">
                                     <div className="relative">
                                     <label htmlFor="phoneNumber" className="text-sm leading-7 text-gray-600">Phone Number</label>
-                                    <input type="text" id="phoneNumber" name="phoneNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    <input required type="text" id="phoneNumber" name="phoneNumber" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
+                                    </div>
+                                </div>
+                                <div className="w-1/2 p-2">
+                                    <div className="relative">
+                                    <label htmlFor="emailAddress" className="text-sm leading-7 text-gray-600">Email Address</label>
+                                    <input required type="text" id="emailAddress" name="emailAddress" className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500" />
                                     </div>
                                 </div>
                             </div>
