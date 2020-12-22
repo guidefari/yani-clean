@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='relative flex items-center justify-center mx-3 sm:shadow sm:shadow-md sm:pt-14 min-h-sm md:pt-0 md:bg-blue-300 sm:mt-6 md:mt-0 lg:py-10'>
+        <div className='relative flex items-center justify-center mx-3 sm:shadow sm:shadow-md min-h-sm md:pt-0 md:bg-blue-300 sm:mt-6 md:mt-0 lg:py-10'>
             <div className='absolute flex items-center justify-center md:static md:w-1/2'>
                 <div className='relative lg:pl-10'>
                     <img
-                        src='/assets/hero.png'
+                        src='/assets/hero.jpg'
                         title='Hero image'
                         alt='Lady shaking a rug'
-                        className='inline-block pb-5 rounded-none sm:h-full md:h-72 lg:h-96 xl:h-full'
+                        className='inline-block object-center pb-5 rounded-none md:h-72 lg:h-96 xl:h-112'
                     />
                     <div className='absolute top-0 left-0 w-full opacity-70 bg-gradient-to-br from-blue-primary to-blue-secondary manual-height md:hidden'/>
                 </div>
