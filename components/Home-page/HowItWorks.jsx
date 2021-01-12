@@ -22,7 +22,7 @@ const HowItWorks = () => {
                         </Link>
                         <aside className='px-2 py-0 rounded-md sm:px-3 sm:py-1 font-heading text-blue-primary bg-blue-shadowOne'>1</aside>
                     </div>
-                    <p className='text-sm '>Give us insight on work at hand.</p>
+                    <p className='text-sm '>Simply Click and choose between our variety of services </p>
                 </div>
                 <div className='z-10 flex flex-col w-11/12 px-5 py-4 border-2 border-gray-400 shadow-md shadow-lg sm:w-9/12 bg-white-true'>
                     <div className='flex items-center justify-between w-full pb-3'>
@@ -31,7 +31,7 @@ const HowItWorks = () => {
                         </h3>
                         <aside className='px-2 py-0 rounded-md sm:px-3 sm:py-1 font-heading text-blue-primary bg-blue-shadowOne'>2</aside>
                     </div>
-                    <p className='text-sm '>Our sales team will reach out with the contract and invoice before we start work.</p>
+                    <p className='text-sm '>View our methods of payment</p>
                 </div>
                 <div className='z-10 flex flex-col w-11/12 px-5 py-4 border-2 border-gray-400 shadow-md shadow-lg sm:w-9/12 bg-white-true'>
                     <div className='flex items-center justify-between w-full pb-3'>
@@ -40,7 +40,7 @@ const HowItWorks = () => {
                         </h3>
                         <aside className='px-2 py-0 rounded-md sm:px-3 sm:py-1 font-heading text-blue-primary bg-blue-shadowOne'>3</aside>
                     </div>
-                    <p className='text-sm '>The final step before a sparkling home.</p>
+                    <p className='text-sm '>Pay for your personally chosen service</p>
                 </div>
                 <svg className='absolute hidden pr-32 text-gray-400 lg:block lg:top-1/2 pl-28' viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg">
                     <line className='' x1={0} y1={0} x2={100} y2={0} stroke="#B6B3B3" />
