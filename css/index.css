@@ -5,27 +5,37 @@
 /* purgecss end ignore */
 
 /* this is because the image doesnt take up 100% height of the div, so we gotta cheat code somehow bru */
-.manual-height{
-    height: 98.5%;
+.manual-height {
+  height: 98.5%;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
-  }
+  width: 12px;
+}
 
-.form-btn{@apply px-5 py-3 border-2 border-blue-900 rounded-md font-headingSecondary text-blue-primary focus:outline-none focus:ring-2 focus:ring-yellow-primary focus:ring-opacity-50;}
-.form-btn-service{@apply px-3 py-2 bg-transparent border-2 border-blue-900 rounded-md font-headingSecondary focus:outline-none focus:ring-2 focus:ring-yellow-primary focus:border-opacity-0 focus:ring-opacity-50;}
-.service-logo-svg{@apply inline-block w-8 h-8 md:w-9 md:h-9 lg:w-12 lg:h-12;}
-.number-input{@apply block w-16 mt-1 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-blue-primary focus:ring-opacity-50 sm:text-sm;}
-.basic-animation {@apply transition duration-500 ease-in-out;}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-btn {
+  @apply px-5 py-3 text-sm border-2 border-blue-900 rounded-md font-headingSecondary text-blue-primary focus:outline-none focus:ring-2 focus:ring-yellow-primary focus:ring-opacity-50;
+}
+.form-btn-service {
+  @apply px-3 py-2 bg-transparent border-2 border-blue-900 rounded-md font-headingSecondary focus:outline-none focus:ring-2 focus:ring-yellow-primary focus:border-opacity-0 focus:ring-opacity-50;
+}
+.service-logo-svg {
+  @apply inline-block w-8 h-8 md:w-9 md:h-9 lg:w-12 lg:h-12;
+}
+.number-input {
+  @apply block w-16 mt-1 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-blue-primary focus:ring-opacity-50 sm:text-sm;
+}
+.basic-animation {
+  @apply transition duration-500 ease-in-out;
+}
 @tailwind utilities;
