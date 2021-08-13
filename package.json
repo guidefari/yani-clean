@@ -21,7 +21,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.0.2",
-    "next": "10.0.3",
+    "next": "11.1.0",
     "postcss": "^8.1.10",
     "postcss-import": "^13.0.0",
     "react": "17.0.1",
